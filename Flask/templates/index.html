@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Iris Classification</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Delicious
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Updated: May 16 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <!--<section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+      <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+    </div>
+  </section>-->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">  Iris</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#species">Species</a></li>
+          <li><a class="nav-link scrollto" href="#classify">Classify</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(static/assets/img/slide/slide-1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Iris</span> Classification</h2>
+                <p class="animate__animated animate__fadeInUp">Come classify the iris flowers based on their Petal and Sepal length and width. 
+                  If you wish to know more about the iris flower, click on about and if u wish to classify the flower, then click on classify
+                </p>
+                <div>
+                  <a href="#about" class="btn-menu animate__animated animate__fadeInUp scrollto">About</a>
+                  <a href="#classify" class="btn-book animate__animated animate__fadeInUp scrollto">classify</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(static/assets/img/slide/slide-2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Iris</span> Classification</h2>
+                <p class="animate__animated animate__fadeInUp">Come classify the iris flowers based on their Petal and Sepal length and width. 
+                  If you wish to know more about the iris flower, click on about and if u wish to classify the flower, then click on classify</p>
+                <div>
+                  <a href="#about" class="btn-menu animate__animated animate__fadeInUp scrollto">About</a>
+                  <a href="#classify" class="btn-book animate__animated animate__fadeInUp scrollto">Classify</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(static/assets/img/slide/slide-3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Iris</span> Classification</h2>
+                <p class="animate__animated animate__fadeInUp">Come classify the iris flowers based on their Petal and Sepal length and width. 
+                  If you wish to know more about the iris flower, click on about and if u wish to classify the flower, then click on classify</p>
+                <div>
+                  <a href="#about" class="btn-menu animate__animated animate__fadeInUp scrollto">About</a>
+                  <a href="#classify" class="btn-book animate__animated animate__fadeInUp scrollto">Classify</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3>Did you know <strong>The three upright petals on an iris flower stand for faith, wisdom, and valor!</strong></h3>
+              <p>
+                Iris is a flowering plant genus of 310 accepted species with showy flowers. As well as being the scientific name, iris is also widely used as a common name for all Iris species, as well as some belonging to other closely related genera. A common name for some species is flags, while the plants of the subgenus Scorpiris are widely known as junos, particularly in horticulture. It is a popular garden flower.              </p>
+              <p class="fst-italic">
+                The often-segregated, monotypic genera Belamcanda (blackberry lily, I. domestica), Hermodactylus (snake's head iris, I. tuberosa), and Pardanthopsis (vesper iris, I. dichotoma) are currently included in Iris.
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> Family Name: Iridaceae.</li>
+                <li><i class="bx bx-check-double"></i> Synonyms: Belamcanda, Juno, Junopsis</li>
+                <li><i class="bx bx-check-double"></i> Height: 6 inch to 4 feet tall
+                <li><i class="bx bx-check-double"></i> Distribution Range: Asia,Europe and North America</li>
+                <li><i class="bx bx-check-double"></i> Flower Colors: Different shades of purple, blue, white and yellow</li>
+                <li><i class="bx bx-check-double"></i> Environmental Impact: Positive</li>
+                <li><i class="bx bx-check-double"></i> Maintenance: Low</li>
+                <li><i class="bx bx-check-double"></i> Blooming time: Late spring and summer
+                </ul>
+              <p>
+                The flower meaning is eloquence, which is associated with the message of the Greek goddess.
+                 Further, the association of irises and the afterlife is emphasised in Greek culture, 
+                 as the goddess escorts the deceased from earth to heaven, guiding them to their final destination.
+                 Hence, irises were planted on the graves of loved ones.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Whu Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Why to <span>Classify?</span></h2>
+          <p>The Iris flower dataset is significant because it serves as a foundational example in machine learning.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <span>01</span>
+              <h4>Simplicity</h4>
+              <p>The dataset is small and well-defined, with only three classes and four easily measurable features (sepal and petal length/width).
+                 This makes it a good starting point for beginners to learn about classification algorithms.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>02</span>
+              <h4>Effectiveness</h4>
+              <p>Despite its simplicity, the dataset demonstrates the power of machine learning.
+                 Algorithms can learn the subtle differences between the iris flower measurements and achieve high accuracy in classifying them.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>03</span>
+              <h4>Versatility</h4>
+              <p>The concepts learned from classifying these irises can be applied to more complex datasets with many features and classes. 
+                It's a stepping stone to tackling real-world classification problems in various fields.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Whu Us Section -->
+
+    <!-- ======= Species Section ======= -->
+    <section id="species" class="species">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Check out the <span>Species</span></h2>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Iris Setosa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Iris Versicolor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Iris Virginica</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Iris Setosa</h3>
+                    <p class="fst-italic">This iris species is distinguished by its sepal and petal measurements. Iris setosa generally has the smallest flowers among the three, with sepals measuring up to 4.5 cm and petals up to 1.5 cm. Their colors can range from pale lilac to deep blue.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="static/assets/img/specials-1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Iris Versicolor</h3>
+                    <p class="fst-italic"></p>This iris species has larger flowers compared to Iris setosa. Sepal length can reach up to 7 cm, while petal length can reach up to 5 cm. Their colors are quite variable, including blue, violet, and purple tones.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="static/assets/img/specials-2.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Iris Virginica</h3>
+                    <p class="fst-italic">This iris species often has the largest flowers among the three. Sepal length can reach up to 7 cm and petal length can be up to 6 cm. Their colors are similar to Iris versicolor, with shades of blue, violet, and purple.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="static/assets/img/specials-3.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Species Section -->
+
+    <!-- ======= Classify section ======= -->
+     <section id ="classify" class="classify">
+    <div class="classify_container">
+  
+      <div class="section-title">
+        <h2>Classify</h2>
+        <p>Give the following values. To know more about them, please view the previous sections.
+          Give all the inputs. Dont miss any.
+        </p>
+      </div>
+
+
+    <form action = 'submit', method = 'post' style='text-align: center;'>
+
+      <label for="SepalLengthCm">SepalLengthCm</label>
+      <input type="number" id="Pclass" min = 0 max = 10 name="SepalLengthCm">
+      <br>
+      <br>
+      <label for="SepalWidthCm">SepalWidthCm</label>
+      <input type="number" id="Pclass" min = 0 max = 10 name="SepalWidthCm">
+      <br>
+      <br>
+      <label for="PetalLengthCm">PetalLengthCm</label>
+      <input type="number" id="Pclass" min = 0 max = 10 name="PetalLengthCm">
+      <br>
+      <br>
+      <label for="PetalWidthCm">PetalWidthCm</label>
+      <input type="number" id="Pclass" min = 0 max = 10 name="PetalWidthCm">
+      <br>
+      <br>
+      <input type ='submit' value = 'Submit'>
+    </form>
+    </div>
+  <div style='text-align: center;'>
+    <br><br>The Iris flower species is {{result}} .
+    
+    </div>
+    </section>
+    <!-- End of Classify-->
+
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title">
+          <h2>Some photos of<span> Iris Flower</span></h2>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
+                <img src="static/assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
+                <img src="static/assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
+                <img src="static/assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
+                <img src="static/assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
+                <img src="static/assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
+                <img src="static/assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
+                <img src="static/assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
+                <img src="static/assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Iris Classification</h3>
+      <p>Come Classify the Iris Flowers based on their Petal and sepal Length and Width.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Iris</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">Harshini Kothamasu</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
